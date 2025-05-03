@@ -1,0 +1,12 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div class="relative cursor-pointer">
+        <img src="{{ certificateImageUrl }}"
+            alt="{{ certificateTitle }}"
+            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity font-medium">Click to view</span></div>
+    </div>
+    <div class="flex flex-col space-y-1.5 p-6">
+        <h3 class="font-semibold tracking-tight text-xl text-center">{{ certificateTitle }}</h3>
+    </div>
+</div>

@@ -1,0 +1,283 @@
+<section id="skills" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe h-5 w-5 text-indigo-600">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                        Web Development
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="JavaScript"
+                                [level]="4"
+                                description="Full-stack JS development with modern frameworks and performance tuning.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="TypeScript"
+                                [level]="3"
+                                description="Type systems and advanced patterns for large-scale applications.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="React"
+                                [level]="4"
+                                description="Component architecture, state management, and performance optimization.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Next.js"
+                                [level]="3"
+                                description="Server-side rendering, static generation, and API routes.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Vue.js"
+                                [level]="2"
+                                description="Building interactive user interfaces and single-page applications.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="CSS/Tailwind"
+                                [level]="3"
+                                description="Responsive design, animations, and modern CSS frameworks.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-server h-5 w-5 text-indigo-600">
+                            <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                            <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                            <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                            <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                        </svg>
+                        Backend Development
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Node.js"
+                                [level]="3"
+                                description="RESTful APIs and microservices architecture.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Express.js"
+                                [level]="3"
+                                description="Building robust API endpoints and middleware integration.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Python"
+                                [level]="2"
+                                description="Data processing and API integration.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="GraphQL"
+                                [level]="2"
+                                description="Schema definition and query operations.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="MongoDB"
+                                [level]="3"
+                                description="Database design, queries, and aggregation pipelines.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-git-branch h-5 w-5 text-indigo-600">
+                            <line x1="6" x2="6" y1="3" y2="15"></line>
+                            <circle cx="18" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M18 9a9 9 0 0 1-9 9"></path>
+                        </svg>
+                        DevOps &amp; Cloud
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Git"
+                                [level]="4"
+                                description="Version control, branching strategies, and collaborative development.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Docker"
+                                [level]="2"
+                                description="Containerization and deployment of applications.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="CI/CD"
+                                [level]="3"
+                                description="Automated testing and deployment pipelines.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-palette h-5 w-5 text-indigo-600">
+                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                            <path
+                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                            </path>
+                        </svg>
+                        UI/UX Design
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Figma"
+                                [level]="2"
+                                description="UI design, prototyping, and collaboration.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Adobe XD"
+                                [level]="1"
+                                description="Basic interface design and wireframing.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="CI/CD"
+                                [level]="3"
+                                description="Automated testing and deployment pipelines.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-dashboard h-5 w-5 text-indigo-600">
+                            <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                            <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                            <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                            <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                        </svg>
+                        Project Management
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Agile/Scrum"
+                                [level]="3"
+                                description="Automated testing and deployment pipelines.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Team Leadership"
+                                [level]="3"
+                                description="Sprint planning, backlog management, and team coordination.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="JIRA"
+                                [level]="3"
+                                description="Project tracking, issue management, and workflow automation.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Team Leadership"
+                                [level]="2"
+                                description="Leading development teams and driving technical initiatives.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-database h-5 w-5 text-indigo-600">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                            <path d="M3 12A9 3 0 0 0 21 12"></path>
+                        </svg>
+                        Database Management
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="PostgreSQL"
+                                [level]="1"
+                                description="Complex queries, optimization, and database design.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="MySQL"
+                                [level]="2"
+                                description="Data modeling and relationship management.">
+                            </app-skill-item>
+                        </div>
+                        <div class="space-y-1">
+                            <app-skill-item
+                                skillName="Redis"
+                                [level]="2"
+                                description="Caching strategies and real-time data handling.">
+                            </app-skill-item>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

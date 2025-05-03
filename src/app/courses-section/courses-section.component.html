@@ -1,0 +1,58 @@
+<section 
+    class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-graduation-cap h-8 w-8 text-indigo-600">
+                <path
+                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                </path>
+                <path d="M22 10v6"></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+            </svg>Courses</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <app-course-card
+                courseTitle="Advanced React Patterns"
+                courseEndDate="March 2024"
+                courseProvider="Frontend Masters"
+                courseDescription="Deep dive into React design patterns, custom hooks, and performance optimization techniques."
+                certificateUrl="https://frontendmasters.com/cert/123"
+            ></app-course-card>
+
+            <app-course-card
+                courseTitle="System Design for Software Engineers"
+                courseEndDate="February 2024"
+                courseProvider="Educative.io"
+                courseDescription="Comprehensive course on designing scalable distributed systems and microservices architecture."
+                certificateUrl="https://educative.io/cert/456"
+            ></app-course-card>
+
+            <app-course-card
+                courseTitle="Machine Learning Specialization"
+                courseEndDate="January 2024"
+                courseProvider="Coursera"
+                courseDescription="Three-course specialization covering ML fundamentals, neural networks, and practical applications."
+                certificateUrl="https://coursera.org/cert/789"
+            ></app-course-card>
+
+            <app-course-card
+                courseTitle="AWS Solutions Architect"
+                courseEndDate="December 2023"
+                courseProvider="A Cloud Guru"
+                courseDescription="Comprehensive AWS cloud architecture and services implementation training."
+                certificateUrl="https://acloud.guru/cert/012"
+            ></app-course-card>
+
+            <app-course-card
+                courseTitle="TypeScript Advanced Concepts"
+                courseEndDate="November 2023"
+                courseProvider="Udemy"
+                courseDescription="Advanced TypeScript features, generics, and design patterns for large-scale applications."
+                certificateUrl="https://udemy.com/cert/345"
+            ></app-course-card>
+
+        </div>
+    </div>
+</section>

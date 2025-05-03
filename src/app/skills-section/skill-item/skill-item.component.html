@@ -1,0 +1,6 @@
+<div class="flex justify-between items-center">
+    <span class="text-sm font-medium">{{ skillName }}</span>
+    <app-level-name [levelName]="getLevelNameFromSkillLevel(level)"></app-level-name>
+</div>
+<app-progress-bar [skillLevel]="level"></app-progress-bar>
+<p class="text-xs text-gray-500">{{ description }}</p>

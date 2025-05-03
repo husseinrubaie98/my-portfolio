@@ -1,0 +1,38 @@
+<!-- beginner -->
+@if (skillLevel === 1) {
+    <div class="flex gap-1 h-2 mt-1 mb-2" *ngIf="skillLevel === 1">
+        <div class="h-full flex-1 rounded-sm bg-red-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-red-100"></div>
+        <div class="h-full flex-1 rounded-sm bg-red-100"></div>
+        <div class="h-full flex-1 rounded-sm bg-red-100"></div>
+    </div>
+}
+
+<!-- intermediate -->
+@if (skillLevel === 2) {
+    <div class="flex gap-1 h-2 mt-1 mb-2">
+        <div class="h-full flex-1 rounded-sm bg-yellow-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-yellow-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-yellow-100"></div>
+        <div class="h-full flex-1 rounded-sm bg-yellow-100"></div>
+    </div>
+}
+
+<!-- advanced -->
+@if (skillLevel === 3) {
+    <div class="flex gap-1 h-2 mt-1 mb-2">
+        <div class="h-full flex-1 rounded-sm bg-[#3B82F6]"></div>
+        <div class="h-full flex-1 rounded-sm bg-[#3B82F6]"></div>
+        <div class="h-full flex-1 rounded-sm bg-[#3B82F6]"></div>
+        <div class="h-full flex-1 rounded-sm bg-[#3B82F6]/20"></div>
+    </div>
+}
+
+@if (skillLevel === 4) {
+    <div class="flex gap-1 h-2 mt-1 mb-2">
+        <div class="h-full flex-1 rounded-sm bg-green-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-green-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-green-500"></div>
+        <div class="h-full flex-1 rounded-sm bg-green-500"></div>
+    </div>
+}

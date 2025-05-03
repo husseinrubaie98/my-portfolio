@@ -1,0 +1,15 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-lg transition-shadow" [ngClass]="{ 'border-l-4 border-purple-600' : isCurrent }">
+    <div class="p-6" [ngClass]="{ 'bg-purple-50' : isCurrent }">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <h3 class="text-xl font-semibold text-gray-900">{{ position }}</h3>
+            @if (isCurrent) {
+                <span class="px-2 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">Current</span>
+            }
+            
+            
+        </div>
+        <p class="font-medium" [ngClass]="{ 'text-purple-700' : isCurrent, 'text-indigo-600' : !isCurrent }">{{ company }}</p>
+        <p class="text-gray-500 text-sm">{{ duration }}</p>
+        <p class="mt-2 text-gray-600">{{ workSummary }}</p>
+    </div>
+</div>

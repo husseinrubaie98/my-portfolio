@@ -1,0 +1,11 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-lg transition-shadow">
+    <div class="flex flex-col space-y-1.5 p-6">
+        <div class="flex items-center gap-4">
+            <ng-content></ng-content>
+            <h3 class="font-semibold tracking-tight text-xl">{{ serviceTitle }}</h3>
+        </div>
+    </div>
+    <div class="p-6 pt-0">
+        <p>{{ serviceDescription }}</p>
+    </div>
+</div>
