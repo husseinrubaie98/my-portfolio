@@ -4,37 +4,15 @@
             <app-activity-icon></app-activity-icon>Activities
         </h2>
         <div class="grid md:grid-cols-2 gap-6">
-            <app-activity-item
-                activityTitle="Global Innovation Hackathon"
-                activityDate="February 2024"
-                activityType="Hackathon"
-                activityOrganizer="TechForward"
-                activitySummary="48-hour hackathon focused on developing sustainable technology solutions. Won 2nd place."
-            ></app-activity-item>
-
-            <app-activity-item
-                activityTitle="AI & Machine Learning Workshop"
-                activityDate="March 2024"
-                activityType="Workshop"
-                activityOrganizer="DataScience Hub"
-                activitySummary="Hands-on workshop on implementing machine learning models and AI applications."
-            ></app-activity-item>
-
-            <app-activity-item
-                activityTitle="Web3 Development Conference"
-                activityDate="April 2024"
-                activityType="Conference"
-                activityOrganizer="BlockchainTech"
-                activitySummary="Three-day conference on blockchain technology and decentralized applications."
-            ></app-activity-item>
-
-            <app-activity-item
-                activityTitle="Full Stack Development Bootcamp"
-                activityDate="January 2024"
-                activityType="Bootcamp"
-                activityOrganizer="Tech Academy"
-                activitySummary="Intensive 12-week bootcamp covering modern web development stack including React, Node.js, and databases."
-            ></app-activity-item>
+            @for(activity of activities; track activity) {
+                <app-activity-item
+                    [activityTitle]="activity.title"
+                    [activityDate]="activity.date"
+                    [activityType]="activity.type"
+                    [activityOrganizer]="activity.organizer"
+                    [activitySummary]="activity.summary"
+                ></app-activity-item>
+            }
         </div>
     </div>
 </section>
