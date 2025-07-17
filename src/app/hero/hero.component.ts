@@ -1,20 +1,19 @@
 import { Component, Input } from '@angular/core';
+import { GithubButtonComponent } from "../buttons/github-button/github-button.component";
+import { LinkedinButtonComponent } from "../buttons/linkedin-button/linkedin-button.component";
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [GithubButtonComponent, LinkedinButtonComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-  
-  public bio: String = `A seasoned software engineer with a passion for
-                crafting elegant solutions to complex problems. With extensive experience in building and scaling
-                enterprise applications, I specialize in turning ambitious ideas into robust, production-ready systems
-                that drive business growth.`;
 
-  public position: String = `Senior Software Engineer`;
-    
+  public bio: string = `Experienced Senior Software Engineer with over 5 years in the field, and a very wide skillset.
+  Delivering innovative and efficient solutions across various technologies.
+  Passionate about solving complex problems and continuously evolving with the latest industry trends.`
 
+  public position: string = `Senior Software Engineer`;
 }
