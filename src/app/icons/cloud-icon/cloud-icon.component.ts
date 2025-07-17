@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cloud-icon',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './cloud-icon.component.html',
   styleUrl: './cloud-icon.component.css'
 })
 export class CloudIconComponent {
-
+  @Input() svgClass = '';
 }

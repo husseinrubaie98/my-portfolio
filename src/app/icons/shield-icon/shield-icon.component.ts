@@ -2,13 +2,12 @@ import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-database-icon',
+  selector: 'app-shield-icon',
   standalone: true,
   imports: [NgClass],
-  templateUrl: './database-icon.component.html',
-  styleUrl: './database-icon.component.css'
+  templateUrl: './shield-icon.component.html',
+  styleUrl: './shield-icon.component.css'
 })
-export class DatabaseIconComponent {
-
+export class ShieldIconComponent {
   @Input() svgClass = '';
 }

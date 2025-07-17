@@ -2,13 +2,12 @@ import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-database-icon',
+  selector: 'app-bug-icon',
   standalone: true,
   imports: [NgClass],
-  templateUrl: './database-icon.component.html',
-  styleUrl: './database-icon.component.css'
+  templateUrl: './bug-icon.component.html',
+  styleUrl: './bug-icon.component.css'
 })
-export class DatabaseIconComponent {
-
+export class BugIconComponent {
   @Input() svgClass = '';
 }
