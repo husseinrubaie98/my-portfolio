@@ -1,18 +1,23 @@
-<div class="min-h-screen bg-white">
-    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
-      <div class="flex items-center justify-between h-16">
+<div class="bg-white">
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
+        [ngClass]="{ 'bg-transparent': !isScrolled, 'bg-white/90 backdrop-blur-md shadow-sm': isScrolled }"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
         <h1 class="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">
           Portfolio</h1>
         <div class="hidden md:flex gap-6">
-            <app-navbar-item itemName="experience"></app-navbar-item>
-            <app-navbar-item itemName="skills"></app-navbar-item>
-            <app-navbar-item itemName="projects"></app-navbar-item>
-            <app-navbar-item itemName="services"></app-navbar-item>
-            <app-navbar-item itemName="courses"></app-navbar-item>
-            <app-navbar-item itemName="certificates"></app-navbar-item>
-            <app-navbar-item itemName="activities"></app-navbar-item>
-            <app-navbar-item itemName="hire me"></app-navbar-item>
+            @for(section of sections; track $index) {
+              <app-navbar-item
+                [itemName]="section"
+                [isActive]="activeSection === section"
+                [sectionId]="section"
+              ></app-navbar-item>
+            }
         </div>
+
+
         <button
           class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden"
           type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r0:" data-state="closed">
@@ -24,6 +29,7 @@
             <line x1="4" x2="20" y1="18" y2="18"></line>
           </svg>
         </button>
+      </div>
       </div>
     </nav>
 </div>
