@@ -22,5 +22,5 @@ export class CourseCardComponent {
   public courseDescription: string = 'Course Description';
   
   @Input()
-  public certificateUrl: string = '#';
+  public certificateUrl: string | null = '#';
 }

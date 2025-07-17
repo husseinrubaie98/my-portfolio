@@ -1,5 +1,4 @@
-<section 
-    class="py-20 bg-gray-50">
+<section id="courses" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2"><svg
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -13,46 +12,15 @@
             </svg>Courses</h2>
         <div class="grid md:grid-cols-2 gap-6">
 
-            <app-course-card
-                courseTitle="Advanced React Patterns"
-                courseEndDate="March 2024"
-                courseProvider="Frontend Masters"
-                courseDescription="Deep dive into React design patterns, custom hooks, and performance optimization techniques."
-                certificateUrl="https://frontendmasters.com/cert/123"
-            ></app-course-card>
-
-            <app-course-card
-                courseTitle="System Design for Software Engineers"
-                courseEndDate="February 2024"
-                courseProvider="Educative.io"
-                courseDescription="Comprehensive course on designing scalable distributed systems and microservices architecture."
-                certificateUrl="https://educative.io/cert/456"
-            ></app-course-card>
-
-            <app-course-card
-                courseTitle="Machine Learning Specialization"
-                courseEndDate="January 2024"
-                courseProvider="Coursera"
-                courseDescription="Three-course specialization covering ML fundamentals, neural networks, and practical applications."
-                certificateUrl="https://coursera.org/cert/789"
-            ></app-course-card>
-
-            <app-course-card
-                courseTitle="AWS Solutions Architect"
-                courseEndDate="December 2023"
-                courseProvider="A Cloud Guru"
-                courseDescription="Comprehensive AWS cloud architecture and services implementation training."
-                certificateUrl="https://acloud.guru/cert/012"
-            ></app-course-card>
-
-            <app-course-card
-                courseTitle="TypeScript Advanced Concepts"
-                courseEndDate="November 2023"
-                courseProvider="Udemy"
-                courseDescription="Advanced TypeScript features, generics, and design patterns for large-scale applications."
-                certificateUrl="https://udemy.com/cert/345"
-            ></app-course-card>
-
+            @for(course of courses; track course) {
+                <app-course-card
+                    [courseTitle]="course.title"
+                    [courseEndDate]="course.endDate"
+                    [courseProvider]="course.provider"
+                    [courseDescription]="course.description"
+                    [certificateUrl]="course.certificateUrl"
+                ></app-course-card>
+            }
         </div>
     </div>
 </section>
