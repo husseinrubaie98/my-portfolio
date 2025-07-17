@@ -2,12 +2,12 @@ import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-security-icon',
+  selector: 'app-document-icon',
   standalone: true,
   imports: [NgClass],
-  templateUrl: './security-icon.component.html',
-  styleUrl: './security-icon.component.css'
+  templateUrl: './document-icon.component.html',
+  styleUrl: './document-icon.component.css'
 })
-export class SecurityIconComponent {
+export class DocumentIconComponent {
   @Input() svgClass = '';
 }
