@@ -10,7 +10,7 @@ import { NgComponentOutlet } from '@angular/common';
 @Component({
   selector: 'app-services-section',
   standalone: true,
-  imports: [ServiceCardComponent, WebDevelopmentIconComponent, MaintenanceIconComponent, NgComponentOutlet],
+  imports: [ServiceCardComponent, MaintenanceIconComponent, NgComponentOutlet],
   templateUrl: './services-section.component.html',
   styleUrl: './services-section.component.css'
 })
