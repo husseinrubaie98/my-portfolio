@@ -1,0 +1,31 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-lg transition-shadow">
+    <div class="flex flex-col space-y-1.5 p-6">
+        <h3 class="text-2xl font-semibold leading-none tracking-tight">{{ projectTitle }}</h3>
+    </div>
+    <div class="p-6 pt-0">
+        <p class="text-gray-600 mb-4">{{ projectDescription }}</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            @for (technology of technologies; track technology) {
+                <span class="px-2 py-1 bg-indigo-100 text-indigo-600 rounded-md text-sm">{{ technology }}</span>
+            }
+        </div>
+        <div class="flex gap-2">
+            <a
+                class="items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 flex"
+                [ngClass]="{ 'opacity-60 justify-center' : codeButtonDisabled, 'justify-center cursor-pointer hover-shadow' : !codeButtonDisabled }"
+                [attr.href]="codeButtonDisabled ? null : liveUrl"
+                [attr.target]="codeButtonDisabled ? null : '_blank'"
+                [attr.disabled]="demoButtonDisabled"
+                >{{ codeButtonDisabled ? 'Private' : 'Code' }}
+            </a>
+                
+            <a
+                [attr.href]="demoButtonDisabled ? null : liveUrl"
+                [attr.target]="demoButtonDisabled ? null : '_blank'"
+                class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground gap-2 h-9 rounded-md px-3 bg-purple-600 flex"
+                [ngClass]="{ 'hover:bg-primary/90 opacity-60' : demoButtonDisabled, 'inline-flex hover:bg-purple-700 cursor-pointer' : !demoButtonDisabled }"
+                [attr.disabled]="demoButtonDisabled">Demo
+            </a>
+        </div>
+    </div>
+</div>

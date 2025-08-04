@@ -1,0 +1,30 @@
+<section id="skills" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @for(skillCategory of allSkills; track skillCategory) {
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                            <ng-container
+                                *ngComponentOutlet="iconMap[skillCategory.icon]; inputs: { svgClass: 'h-8 w-8 text-indigo-600' }">
+                            </ng-container>
+                            {{ skillCategory.categoryName }}
+                        </h3>
+                        <div class="space-y-6">
+                            @for(skill of skillCategory.skillSet; track skill) {
+                                <div class="space-y-1">
+                                    <app-skill-item
+                                        [skillName]="skill.name"
+                                        [level]="skill.level"
+                                        [description]="skill.description">
+                                    </app-skill-item>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

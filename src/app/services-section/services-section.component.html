@@ -1,0 +1,25 @@
+<section data-lov-id="src/components/Services.tsx:46:4" data-lov-name="section"
+    data-component-path="src/components/Services.tsx" data-component-line="46" data-component-file="Services.tsx"
+    data-component-name="section" data-component-content="%7B%22className%22%3A%22py-20%22%7D" id="services"
+    class="py-20">
+    <div data-lov-id="src/components/Services.tsx:47:6" data-lov-name="div"
+        data-component-path="src/components/Services.tsx" data-component-line="47" data-component-file="Services.tsx"
+        data-component-name="div" data-component-content="%7B%22className%22%3A%22container%20mx-auto%20px-4%22%7D"
+        class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2">
+            <app-maintenance-icon></app-maintenance-icon>Services
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            @for(service of services; track service) {
+                <app-service-card
+                    serviceTitle="{{ service.name }}"
+                    serviceDescription="{{ service.description }}">
+                    <ng-container
+                        *ngComponentOutlet="iconMap[service.icon]; inputs: { svgClass: 'h-8 w-8 text-indigo-600' }">
+                    </ng-container>
+                </app-service-card>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<section id="experience" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2">
+            <app-experience-icon></app-experience-icon>Experience
+        </h2>
+        <div class="space-y-6">
+
+            @for(experience of allExperienceList; track experience) {
+                <app-experience-item
+                    position="{{experience.position}}"
+                    company="{{experience.company}}"
+                    duration="{{experience.duration}}"
+                    workSummary="{{experience.workSummary}}"
+                    [isCurrent]="experience.isCurrent">
+                </app-experience-item>
+            }
+        </div>
+    </div>
+</section>

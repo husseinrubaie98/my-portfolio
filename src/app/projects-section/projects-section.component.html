@@ -1,0 +1,16 @@
+<section id="projects" class="py-20">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            @for(project of projects; track project) {
+                <app-project-card
+                    [projectTitle]="project.title"
+                    [projectDescription]="project.description"
+                    [technologies]="project.technologies"
+                    [githubUrl]="project.githubUrl"
+                    [liveUrl]="project.liveUrl">
+                </app-project-card>
+            }
+        </div>
+    </div>
+</section>
