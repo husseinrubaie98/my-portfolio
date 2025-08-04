@@ -1,17 +1,28 @@
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-certificate-item',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './certificate-item.component.html',
   styleUrl: './certificate-item.component.css'
 })
 export class CertificateItemComponent {
 
+  isPreviewOpen = false;
+
+  openPreview() {
+    this.isPreviewOpen = true;
+  }
+
+  closePreview() {
+    this.isPreviewOpen = false;
+  }
+
   @Input()
   certificateTitle: string = '';
 
   @Input()
-  certificateImageUrl: string = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fcoding-certificate-education%2F37&psig=AOvVaw2wUYC_g-kyiG6zOQVd7G0u&ust=1745345576238000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi12ond6YwDFQAAAAAdAAAAABAE';
+  certificateImageUrl: string = 'images/certificates/unavailable.jpg';
 }

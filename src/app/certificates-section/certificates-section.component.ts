@@ -12,7 +12,9 @@ import { Certificate } from './models/Certificate';
 })
 export class CertificatesSectionComponent {
   public certificates: Certificate[] = [
-    { title: 'BS in Computer Science (AUB)', imageUrl: 'assets/images/certificates/aubs.png' },
-    { title: 'Ionic 3 Workshop (30h)', imageUrl: 'assets/images/certificates/aub.png' }
+    { title: 'BS in Computer Science (AUB)', imageUrl: 'images/certificates/unavailable.jpg' },
+    { title: 'Ionic 3 Workshop (30h)', imageUrl: 'images/certificates/unavailable.jpg' },
+    { title: 'Bug Bounty for Beginners', imageUrl: 'images/certificates/bug-bounty.jpg' },
+    { title: 'Windows Batch - Hands-On', imageUrl: 'images/certificates/windows-batch.jpg' },
   ]
 }
