@@ -1,15 +1,32 @@
 import { Component, HostListener } from '@angular/core';
 import { NavbarItemComponent } from "./navbar-item/navbar-item.component";
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NavbarItemComponent, NgClass],
+  imports: [NavbarItemComponent, NgClass, NgIf],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   isScrolled = false;
   scrollPixelsTriggerToChangeNavbar = 100;
