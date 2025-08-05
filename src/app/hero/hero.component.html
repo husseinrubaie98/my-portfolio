@@ -6,8 +6,8 @@
             </h1>
             <p class="text-xl text-gray-600 mb-8 leading-relaxed">{{ bio }}</p>
             <div class="flex gap-4">
-                <app-github-button></app-github-button>
-                <app-linkedin-button></app-linkedin-button>
+                <app-github-button (click)="goToGithub()"></app-github-button>
+                <app-linkedin-button (click)="goToLinkedIn()"></app-linkedin-button>
             </div>
         </div>
         <div class="relative">
