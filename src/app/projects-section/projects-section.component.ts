@@ -15,8 +15,8 @@ export class ProjectsSectionComponent {
       title: 'Portfolio Website',
       description: 'A personal portfolio website to showcase my skills and projects.',
       technologies: ['Angular', 'TypeScript', 'Tailwindcss'],
-      githubUrl: null,
-      liveUrl: null
+      githubUrl: 'https://github.com/husseinrubaie98/my-portfolio',
+      liveUrl: 'https://husseinrubaie98.github.io/portfolio-prod/'
     },
     {
       title: 'AUB Outlook',
