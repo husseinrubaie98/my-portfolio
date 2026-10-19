@@ -122,8 +122,8 @@ export class SkillsSectionComponent {
         { name: 'Human-in-the-loop Workflows', level: 2, description: 'Approval steps, interrupts and human review in agent flows' },
         { name: 'Agentic System Architecture', level: 2, description: 'Designing tool-using, multi-step LLM agents' },
         { name: 'Text-to-SQL Agents', level: 2, description: 'LLM-to-database agents, natural language querying' },
+        { name: 'MLflow', level: 2, description: 'LLM tracing, evaluation (automated testing) and prompt versioning' },
         { name: 'AI-assisted Development', level: 2, description: 'Claude Code' },
-        { name: 'MLflow', level: 1, description: 'LLM tracing, evaluation (automated testing) and prompt versioning' },
         { name: 'MCP', level: 1, description: 'Building and using Model Context Protocol servers and tools' },
         { name: 'LLM Application Security', level: 1, description: 'Prompt injection, data leakage and guardrails' },
       ]
