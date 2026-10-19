@@ -12,7 +12,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build:static` to build the static site for deployment. It does a production build and replaces the contents of `dist/my-portfolio/`; upload the files in `dist/my-portfolio/browser/` to your host.
+
 
 ## Running unit tests
 
