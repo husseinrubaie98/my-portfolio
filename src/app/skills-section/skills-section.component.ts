@@ -13,6 +13,7 @@ import { GearIconComponent } from '../icons/gear-icon/gear-icon.component';
 import { BugIconComponent } from '../icons/bug-icon/bug-icon.component';
 import { SinglePersonelIconComponent } from '../icons/single-personel-icon/single-personel-icon.component';
 import { DoublePersonelIconComponent } from '../icons/double-personel-icon/double-personel-icon.component';
+import { AiIconComponent } from '../icons/ai-icon/ai-icon.component';
 
 @Component({
   selector: 'app-skills-section',
@@ -114,6 +115,20 @@ export class SkillsSectionComponent {
       ]
     },
     {
+      categoryName: 'AI',
+      icon: 'ai',
+      skillSet: [
+        { name: 'LangGraph/LangChain', level: 2, description: 'Multi-agent systems, supervisor pattern' },
+        { name: 'Human-in-the-loop Workflows', level: 2, description: 'Approval steps, interrupts and human review in agent flows' },
+        { name: 'Agentic System Architecture', level: 2, description: 'Designing tool-using, multi-step LLM agents' },
+        { name: 'Text-to-SQL Agents', level: 2, description: 'LLM-to-database agents, natural language querying' },
+        { name: 'AI-assisted Development', level: 2, description: 'Claude Code' },
+        { name: 'MLflow', level: 1, description: 'LLM tracing, evaluation (automated testing) and prompt versioning' },
+        { name: 'MCP', level: 1, description: 'Building and using Model Context Protocol servers and tools' },
+        { name: 'LLM Application Security', level: 1, description: 'Prompt injection, data leakage and guardrails' },
+      ]
+    },
+    {
       categoryName: 'Soft Skills / Management',
       icon: 'management',
       skillSet: [
@@ -150,6 +165,7 @@ export class SkillsSectionComponent {
     otherSkills: GearIconComponent,
     softwareTesting: BugIconComponent,
     management: DoublePersonelIconComponent,
-    selfDevelopment: SinglePersonelIconComponent
+    selfDevelopment: SinglePersonelIconComponent,
+    ai: AiIconComponent
   }
 }
